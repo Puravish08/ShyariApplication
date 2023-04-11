@@ -39,6 +39,8 @@ class OneBigShyariActivity : AppCompatActivity() {
         setContentView(disbinding.root)
 
 
+
+
 //
 //        val url: String? = intent.getStringExtra("image")
 //
@@ -195,6 +197,13 @@ class OneBigShyariActivity : AppCompatActivity() {
 //
 //
 //    }
+
+
+
+
+
+
+
 
 
 

@@ -4,16 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="#C3C9DF"
+    android:background="#B9EDDD"
     android:layout_height="match_parent"
     tools:context=".OneBigShyariActivity">
 
 
-
-    <androidx.appcompat.widget.Toolbar
+  <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="@dimen/_50sdp"
-        android:background="#D40000"
+        android:background="#569DAA"
         android:orientation="vertical">
 
 
@@ -21,14 +20,14 @@
             android:layout_width="@dimen/_25sdp"
             android:layout_height="@dimen/_25sdp"
             android:layout_marginTop="@dimen/_12sdp"
-            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
             android:id="@+id/backme"
             android:src="@drawable/backme" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Open Your Favourit Shayari"
+            android:text="@string/open_your_favourit_shayari"
             android:textSize="@dimen/_20ssp"
             android:textColor="@color/white"
             android:layout_marginLeft="@dimen/_20sdp"/>
@@ -43,7 +42,7 @@
         android:layout_margin="@dimen/_10sdp"
         android:elevation="@dimen/_330sdp"
         android:id="@+id/cardshayari"
-        app:cardBackgroundColor="#323232"
+        app:cardBackgroundColor="#577D86"
         android:layout_marginTop="@dimen/_80sdp"
         app:cardCornerRadius="@dimen/_12sdp">
 
@@ -67,7 +66,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_450sdp"
         android:gravity="center"
-        android:text="Dumy Text"
+        android:text="dsfdsfsfdsfsfsf"
         android:textColor="#FFFFFF"
         android:textSize="@dimen/_18sdp" />
 
@@ -93,7 +92,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_455sdp"
-            android:background="#3B4241">
+            android:background="#569DAA">
 
 
             <ImageView

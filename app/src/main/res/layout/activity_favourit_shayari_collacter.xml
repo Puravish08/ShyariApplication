@@ -5,14 +5,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#C3C9DF"
+    android:orientation="vertical"
     tools:context=".favourit_shayari_collacter">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:orientation="vertical"
+        android:background="#569DAA"
+        >
+
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:id="@+id/backimg"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:src="@drawable/backme" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favourit Shayari"
+            android:textStyle="bold"
+            android:textSize="@dimen/_22ssp"
+            android:textColor="@color/white"
+            android:id="@+id/txtdisplaytitle"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_8sdp"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
 
 
 
     <androidx.recyclerview.widget.RecyclerView
+        android:soundEffectsEnabled="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:listitem="@layout/display_category_data"
+        tools:listitem="@layout/shayari_collacter_design_item"
         android:id="@+id/rcvfav"/>
 
 

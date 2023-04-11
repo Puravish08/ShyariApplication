@@ -65,12 +65,12 @@ class FavouritShayariAdapter(var likefv:(Int,Int) -> Unit) : RecyclerView.Adapte
     fun updatelist (list: ArrayList<favoratshayri>){
 
         this.fvlist=list
-        if (list == null && fvlist.size > 0)
-        {
+//        if (list == null && fvlist.size > 0)
+//        {
 
-            fvlist.addAll(list)
+//            fvlist.addAll(list)
             notifyDataSetChanged()
-        }
+//        }
     }
 
 
