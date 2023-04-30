@@ -6,12 +6,14 @@ import android.app.SearchManager
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Intent
-import android.net.Uri
+ import android.graphics.Bitmap
+ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
-import android.widget.ImageView
+ import android.view.View
+ import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -112,6 +114,22 @@ class OneBigShyariActivity : AppCompatActivity() {
 //        }
 
 
+        disbinding.imgdowlond.setOnClickListener{
+
+
+            val z : View = disbinding.txtshayari
+            z.isDrawingCacheEnabled = true
+            val totalHeight:Int = z.height
+            val totalweight:Int=z.width
+            z.layout(0,0,totalweight,totalHeight)
+            z.buildDrawingCache(true)
+            val bm:Bitmap = Bitmap.createBitmap(z.drawingCache)
+            z.isDrawingCacheEnabled = false
+            Toast.makeText(this, "Save Successfully", Toast.LENGTH_SHORT).show()
+            MediaStore.Images.Media.insertImage(contentResolver,bm,null,null)
+
+
+        }
 
         disbinding.add.setOnClickListener {
             val intent = Intent(Intent.ACTION_GET_CONTENT)
