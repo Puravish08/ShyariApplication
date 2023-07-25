@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.musict.shayarihelper.Adapter.DisplayDataAdapter
 import com.musict.shayarihelper.databinding.ActivityDisplayCategoryBinding
 
+
 class DisplayCategory : AppCompatActivity() {
 
     lateinit var disbinding : ActivityDisplayCategoryBinding

@@ -24,7 +24,6 @@ class DisplayDataAdapter(
 
     private var sharList = ArrayList<DisplayCategoryModelData>()
 
-
  class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         var ShayariItem: TextView = itemView.findViewById(R.id.txtshayari)
@@ -32,7 +31,6 @@ class DisplayDataAdapter(
         var share: ImageView = itemView.findViewById(R.id.share)
         var imgcopy: ImageView = itemView.findViewById(R.id.copydc)
         var layout: LinearLayout = itemView.findViewById(R.id.layout)
-
 
 //        var linear : LinearLayout=itemView.findViewById(R.id.linear-dis)
     }
@@ -47,7 +45,9 @@ class DisplayDataAdapter(
   }
 
     override fun getItemCount(): Int {
+
         return sharList.size
+
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {

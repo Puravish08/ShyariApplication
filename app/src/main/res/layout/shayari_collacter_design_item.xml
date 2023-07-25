@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#B9EDDD"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
@@ -14,7 +13,7 @@
         android:layout_margin="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_8sdp"
         android:elevation="@dimen/_200sdp"
-        app:cardBackgroundColor="#577D86"
+        app:cardBackgroundColor="#202e3c"
         app:cardCornerRadius="@dimen/_18sdp">
 
         <LinearLayout
@@ -42,7 +41,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#569DAA">
+            android:background="#1c2936">
 
 
             <ImageView

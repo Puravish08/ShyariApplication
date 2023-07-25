@@ -10,7 +10,8 @@
         android:padding="@dimen/_10sdp"
         android:layout_margin="@dimen/_10sdp"
         app:cardCornerRadius="@dimen/_10sdp"
-        app:cardElevation="@dimen/_20sdp"
+        app:cardBackgroundColor="#202e3c"
+        app:cardElevation="@dimen/_2sdp"
         android:layout_height="wrap_content">
 
     <LinearLayout
@@ -29,7 +30,7 @@
             android:fontFamily="@font/futuramedium"
             android:gravity="center"
             android:id="@+id/txtcategory"
-            android:textColor="@color/black"/>
+            android:textColor="@color/white"/>
 
 
         <ImageView

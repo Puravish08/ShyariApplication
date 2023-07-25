@@ -6,4 +6,9 @@
     </string>
     <string name="open_your_favourit_shayari">Open Your Shayari</string>
 
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="favourite">Favourite</string>
+
 </resources>

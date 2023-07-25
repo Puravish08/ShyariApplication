@@ -1,27 +1,17 @@
 package com.musict.shayarihelper
- import android.annotation.SuppressLint
-import android.app.Activity
-import android.app.Instrumentation
-import android.app.SearchManager
+
+import android.annotation.SuppressLint
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Intent
- import android.graphics.Bitmap
- import android.net.Uri
+import android.net.Uri
 import android.os.Build
 import android.os.Bundle
-import android.os.Environment
 import android.provider.MediaStore
- import android.view.View
- import android.widget.ImageView
 import android.widget.Toast
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-
 import com.musict.shayarihelper.databinding.ActivityOneBigShyariBinding
-import java.io.File
-
 
 
 class OneBigShyariActivity : AppCompatActivity() {
@@ -32,7 +22,7 @@ class OneBigShyariActivity : AppCompatActivity() {
 //    private lateinit var  url : String
 
 
-     val REQUEST_IMAGE_GALLERY = 100
+    val REQUEST_IMAGE_GALLERY = 100
     private var imageUri: Uri? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,15 +31,12 @@ class OneBigShyariActivity : AppCompatActivity() {
         setContentView(disbinding.root)
 
 
-
-
 //
 //        val url: String? = intent.getStringExtra("image")
 //
 //
 //
 //        PRDownloader.initialize(getApplicationContext());
-
 
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -66,7 +53,6 @@ class OneBigShyariActivity : AppCompatActivity() {
 
 
 //        imageView = findViewById(R.id.imglikefv)
-
 
 
         var shayari: String? = intent.getStringExtra("shayari")
@@ -86,9 +72,7 @@ class OneBigShyariActivity : AppCompatActivity() {
 
         disbinding.backme.setOnClickListener {
 
-
-            var i = Intent(this, MainActivity::class.java)
-            startActivity(i)
+            onBackPressed()
         }
 
 
@@ -113,23 +97,12 @@ class OneBigShyariActivity : AppCompatActivity() {
 //
 //        }
 
-
-        disbinding.imgdowlond.setOnClickListener{
-
-
-            val z : View = disbinding.txtshayari
-            z.isDrawingCacheEnabled = true
-            val totalHeight:Int = z.height
-            val totalweight:Int=z.width
-            z.layout(0,0,totalweight,totalHeight)
-            z.buildDrawingCache(true)
-            val bm:Bitmap = Bitmap.createBitmap(z.drawingCache)
-            z.isDrawingCacheEnabled = false
-            Toast.makeText(this, "Save Successfully", Toast.LENGTH_SHORT).show()
-            MediaStore.Images.Media.insertImage(contentResolver,bm,null,null)
+        disbinding.imgdowlond.setOnClickListener {
 
 
         }
+
+
 
         disbinding.add.setOnClickListener {
             val intent = Intent(Intent.ACTION_GET_CONTENT)
@@ -141,15 +114,14 @@ class OneBigShyariActivity : AppCompatActivity() {
         }
 
     }
-     override   fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-            super.onActivityResult(requestCode, resultCode, data)
-            if (resultCode == RESULT_OK && requestCode == REQUEST_IMAGE_GALLERY) {
-                imageUri = data?.data
-                disbinding.imgshow.setImageURI(imageUri)
-            }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (resultCode == RESULT_OK && requestCode == REQUEST_IMAGE_GALLERY) {
+            imageUri = data?.data
+            disbinding.imgshow.setImageURI(imageUri)
         }
-
-
+    }
 
 
 //    private fun checkPermission() {
@@ -215,17 +187,6 @@ class OneBigShyariActivity : AppCompatActivity() {
 //
 //
 //    }
-
-
-
-
-
-
-
-
-
-
-
 
 
 }

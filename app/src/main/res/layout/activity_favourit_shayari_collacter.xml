@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C3C9DF"
+    android:background="#141d27"
     android:orientation="vertical"
     tools:context=".favourit_shayari_collacter">
 
@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_50sdp"
         android:orientation="vertical"
-        android:background="#569DAA"
+        android:background="#202e3c"
         >
 
 

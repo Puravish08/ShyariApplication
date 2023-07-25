@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="#B9EDDD"
+    android:background="#141d27"
     android:layout_height="match_parent"
     tools:context=".OneBigShyariActivity">
 
@@ -12,9 +12,8 @@
   <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="@dimen/_50sdp"
-        android:background="#569DAA"
-        android:orientation="vertical"
-      tools:ignore="MissingClass">
+        android:background="#202e3c"
+        android:orientation="vertical">
 
 
         <ImageView
@@ -43,7 +42,7 @@
         android:layout_margin="@dimen/_10sdp"
         android:elevation="@dimen/_330sdp"
         android:id="@+id/cardshayari"
-        app:cardBackgroundColor="#577D86"
+        app:cardBackgroundColor="#202e3c"
         android:layout_marginTop="@dimen/_80sdp"
         app:cardCornerRadius="@dimen/_12sdp">
 
@@ -92,43 +91,42 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_455sdp"
-            android:background="#569DAA">
+            android:layout_marginTop="@dimen/_445sdp"
+            android:weightSum="3"
+            android:paddingBottom="@dimen/_8sdp"
+            android:background="#1c2936">
+
 
 
             <ImageView
-                android:layout_width="0dp"
-                android:layout_height="@dimen/_25sdp"
-                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
                 android:layout_weight="1"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_gravity="center"
                 android:id="@+id/imgdowlond"
                 android:src="@drawable/downlod" />
 
 
+
             <ImageView
-                android:layout_width="0dp"
-                android:layout_height="@dimen/_22sdp"
-                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
                 android:layout_weight="1"
                 android:id="@+id/copyimg"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_gravity="center"
                 android:src="@drawable/copy" />
 
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="@dimen/_23sdp"
-                android:layout_marginTop="@dimen/_3sdp"
-                android:layout_weight="1"
-                android:visibility="gone"
-                android:id="@+id/like"
-                android:src="@drawable/hear" />
 
             <ImageView
-                android:layout_width="0dp"
-                android:layout_height="@dimen/_22sdp"
-                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
                 android:layout_weight="1"
                 android:id="@+id/share"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
                 android:src="@drawable/share" />
 
 
