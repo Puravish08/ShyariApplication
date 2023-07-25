@@ -62,6 +62,7 @@ class FavouritShayariAdapter(var likefv:(Int,Int) -> Unit) : RecyclerView.Adapte
     }
 
 
+    @SuppressLint("SuspiciousIndentation")
     fun updatelist (list: ArrayList<favoratshayri>){
 
         this.fvlist=list

@@ -45,8 +45,6 @@ class DisplayCategory : AppCompatActivity() {
 
 
 
-
-
           cat_id = intent.getIntExtra("id",0)
 //        sharlist = dbD.shayarisdata(cat_id)
 
@@ -61,6 +59,8 @@ class DisplayCategory : AppCompatActivity() {
             }, { id, fav ->
 
                 dbD.fv_update_data(id, fav)
+
+
 
 
             })

@@ -16,9 +16,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.musict.shayarihelper.DisplayCategoryModelData
 import com.musict.shayarihelper.R
 
-class DisplayDataAdapter(
-    var context: Context,
-    private var dataclick: (DisplayCategoryModelData) -> Unit,
+class DisplayDataAdapter(var context: Context, private var dataclick: (DisplayCategoryModelData) -> Unit,
     private var like: (Int, Int) -> Unit
 ) : RecyclerView.Adapter<DisplayDataAdapter.MyViewHolder>() {
 
@@ -69,7 +67,6 @@ class DisplayDataAdapter(
         }
 
         holder.share.setOnClickListener {
-
 
             val p = Intent(Intent.ACTION_SEND)
             p.type = "text/plan"
